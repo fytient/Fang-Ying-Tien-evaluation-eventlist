@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <button id="addEventBtn">Add New Event</button>
+    <form id="eventForm" style="display: none;">
+        <input type="text" id="eventName" placeholder="Event Name" required>
+        <input type="date" id="eventStart" required>
+        <input type="date" id="eventEnd" required>
+        <button type="submit">Save</button>
+        <button type="button" id="cancelBtn">Cancel</button>
+    </form>
+    <table id="eventTable">
+        <thead>
+            <tr>
+                <th>Event</th>
+                <th>Start</th>
+                <th>End</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody id="eventList"></tbody>
+    </table>
+
+    <script src="eventAPI.js"></script>
+    <script src="event.js"></script>
+</body>
+</html>
